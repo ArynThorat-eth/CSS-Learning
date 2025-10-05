@@ -1,0 +1,71 @@
+@font-face {
+  font-family: acc;
+  src: url(./Toffee.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+#nav {
+  height: 50px;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+h4 {
+  color: white;
+  font-weight: 400;
+  font-family: acc;
+}
+#center {
+  height: 70%;
+  width: 100%;
+  background-image: url(https://www.apple.com/newsroom/images/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/tile/Apple-iPhone-17-Pro-camera-close-up-250909-lp.jpg.og.jpg?202509250428);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+}
+#center h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+  font-family: acc;
+}
+#center h5 {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: acc;
+}
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+#links button {
+  background-color: rgb(103, 156, 180);
+  color: white;
+  padding: 13px 25px;
+  border-radius: 20px;
+  border: none;
+}
