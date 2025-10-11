@@ -15,13 +15,14 @@ main {
   background-color: rgb(12, 1, 1);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 70px 1fr 1fr;
+  grid-template-rows: 70px 1fr 0.5fr 0.5fr;
   grid-gap: 10px;
   padding: 10px;
   grid-template-areas:
     "header header header"
     "section section section"
-    "div1 div2 div3";
+    "div-left bottom-up div-right"
+    "div-left bottom-down div-right";
 }
 
 header {
@@ -32,15 +33,19 @@ section {
   background-color: lightblue;
   grid-area: section;
 }
-#div1 {
-  background-color: darkred;
-  grid-area: div1;
+#div-left {
+  background-color: lightgreen;
+  grid-area: div-left;
 }
-#div2 {
-  background-color: rgb(16, 216, 59);
-  grid-area: div2;
+#div-right {
+  background-color: rgb(233, 26, 26);
+  grid-area: div-right;
 }
-#div3 {
-  background-color: rgb(63, 92, 221);
-  grid-area: div3;
+#bottom-up {
+  background-color: lightpink;
+  grid-area: bottom-up;
+}
+#bottom-down {
+  background-color: lightyellow;
+  grid-area: bottom-down;
 }
